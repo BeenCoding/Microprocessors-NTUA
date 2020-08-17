@@ -22,4 +22,3 @@ LABEL1: 	CMA		; A --> A complementary
 		STA 3000H	; [3000H] = A
  		RST 1		
 END
-
