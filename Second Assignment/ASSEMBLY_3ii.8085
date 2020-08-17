@@ -15,7 +15,7 @@ LSB:        MVI A,F0H  	            ; A is not(0000 1111)
             MVI A,FFH	            ; A is not (0000 0000)
             STA 3000H 	            ; print A in 3000H
             CALL DELB 	            ; delay to see result
-            INR L 		; L++
+            INR L 	            ; L++
             MOV A,L	            ; Move L to A so as to compare
             CPI 04H 	            ; compare A(which is L) with 4
             JZ INIT 	            ; repeat program
@@ -26,7 +26,7 @@ MSB:        MVI A,0FH  	            ; A IS NOT(1111 0000)
             MVI A,FFH	            ; A is not (0000 0000)
             STA 3000H 	            ; print A in 3000H
             CALL DELB 	            ; delay to see result
-            INR L 		; L++
+            INR L 	            ; L++
             MOV A,L	            ; Move L to A so as to compare
             CPI 04H 	            ; compare A(which is L) with 4
             JZ INIT 	            ; repeat program
