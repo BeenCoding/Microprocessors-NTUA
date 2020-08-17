@@ -1,6 +1,6 @@
 IN 10H
 INIT:       MVI L,00H 	            ; L is a counter for flicker times 
-            LXI B,1388H 	; 5000 ms delay
+            LXI B,1388H             ; 5000 ms delay
             CALL KIND  	            ; read input from keyboard
             CPI 00H	            ; IF A==0 then error-read again
             JZ INIT
