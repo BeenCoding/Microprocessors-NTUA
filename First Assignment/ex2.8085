@@ -72,6 +72,4 @@ LIGHT_LED0: 		LDA 2000H
 			CMA			; do a right shift so that led 1 turns on
 			STA 3000H
 			JMP LIGHT_LED0		; repeat till A changes
-			
-		
 END
