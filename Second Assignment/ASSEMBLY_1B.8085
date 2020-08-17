@@ -27,7 +27,7 @@ NEXTBIT:	DCR H		; H--;
 		INX B		;Move one memory space down
 		INR L		; L++ 
 		MOV A,L 
-		CPI 00H	;compare L to 0 (256)
+		CPI 00H		;compare L to 0 (256)
 		JNZ DATA 	
 			
 END
