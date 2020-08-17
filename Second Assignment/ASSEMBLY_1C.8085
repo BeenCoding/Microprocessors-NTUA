@@ -20,10 +20,10 @@ DATA:		LDAX D 			;load contents of DE mem loc to A
 MIGHTBE:	JZ IT_IS 		; If not might be equal to 70H.
 		JMP NEXT 		; If Z = 1 then A = 70H. Else jump to next
 IT_IS:		INR C 			; If all checks passed, then counter ++.
-NEXT:		INX D 			;Move one memory space down
+NEXT:		INX D 			; Move one memory space down
 		INR L 			; L++ 
 		MOV A,L 
-		CPI 00H 		;compare L to 0 (256)
+		CPI 00H 		; compare L to 0 (256)
 		JNZ DATA 	
 		MOV A,C 		; Load content of C to A.
 		CMA 			; Getting A ready for printing.
