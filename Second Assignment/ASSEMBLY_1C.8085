@@ -4,7 +4,7 @@ ARXH:		IN 10H
 		LXI D,0000H 		; INIT DE PAIR  
 		MVI L,00H 		; L IS A COUNTER
 			
-LOOPA:  	STAX B 		; store accumulator to register pair HL
+LOOPA:  	STAX B 			; store accumulator to register pair HL
 		DCR A			; A--;
 		INX B 			; Move one memory space down
 		CPI 00H 
@@ -12,7 +12,7 @@ LOOPA:  	STAX B 		; store accumulator to register pair HL
 		;FINISHED INIT MATRIX STARTING IN 0900H
 			
 		LXI D,0900H 		; DE pair has memory location 0900H
-DATA:		LDAX D 		;load contents of DE mem loc to A
+DATA:		LDAX D 			;load contents of DE mem loc to A
 		CPI 20H 		; Comparing A with 20H
 		JC NEXT 		; If Carry = 1 then A < 20H
 		CPI 70H 		; Comparin A with 70H
