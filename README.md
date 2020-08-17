@@ -8,6 +8,6 @@ The assignments consist of:
   * Verilog ([First Assignment](https://github.com/BeenCoding/Microprocessors-NTUA/tree/master/First%20Assignment))
 
 ### Applications used for simulation:
-* TSIK Simulator used for simulation of the 8085.
-* Atmel Studio 7.0 used for simulation of the AVR Assignments.
-* emu8086 used for simulation of the 8086.
+* TSIK Simulator (8085).
+* Atmel Studio 7.0 (AVR Assignments).
+* emu8086 (8086).
